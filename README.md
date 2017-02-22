@@ -11,6 +11,18 @@ Summary: Jupyter Notebook Content Management Extensions
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jupyter_cms-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jupyter_cms-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/jupyter_cms-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jupyter_cms-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jupyter_cms-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jupyter-cms-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jupyter_cms/badges/version.svg)](https://anaconda.org/conda-forge/jupyter_cms)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jupyter_cms/badges/downloads.svg)](https://anaconda.org/conda-forge/jupyter_cms)
+
 Installing jupyter_cms
 ======================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `jupyter_cms` available on your pl
 ```
 conda search jupyter_cms --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jupyter_cms-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jupyter_cms-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/jupyter_cms-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jupyter_cms-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jupyter_cms-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jupyter-cms-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jupyter_cms/badges/version.svg)](https://anaconda.org/conda-forge/jupyter_cms)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jupyter_cms/badges/downloads.svg)](https://anaconda.org/conda-forge/jupyter_cms)
 
 
 Updating jupyter_cms-feedstock
