@@ -1,5 +1,5 @@
-{% set version = "0.6.1" %}
-{% set sha256 = "8572c6b887b53a42f00d759ca0bfc6d93466a610b3c4bf1b1cc19d4554ce0ab6" %}
+{% set version = "0.6.2" %}
+{% set sha256 = "caac5966fb57268bf6b9239af9dd26e6b78ebc3f1e3845b68866d41308a2c2ee" %}
 
 package:
   name: jupyter_cms
