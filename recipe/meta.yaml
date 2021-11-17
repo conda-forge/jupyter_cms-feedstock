@@ -11,14 +11,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1002
+  number: 1003
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - jupyter-cms = jupyter_cms.extensionapp:main
     - jupyter-bundler = jupyter_cms.bundlerapp:main
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
