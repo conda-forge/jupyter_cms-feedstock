@@ -27,6 +27,7 @@ requirements:
     - notebook >=4.0.0,<7
     - ipython >=4.1.0
     - whoosh >=2.7.0
+    - importlib-metadata  # [py<310]
 
 test:
   imports:
