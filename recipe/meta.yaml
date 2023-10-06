@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python
     - pip
     - setuptools
   run:
-    - python >=3.5
+    - python
     - notebook >=4.0.0,<7
     - ipython >=4.1.0
     - whoosh >=2.7.0
