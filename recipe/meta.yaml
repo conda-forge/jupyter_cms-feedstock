@@ -1,32 +1,31 @@
 {% set version = "0.7.0" %}
-{% set sha256 = "d6c4f1cc327914a2dd480afe795087708c473fc49bdb5e4dbe3abf2f6cc31de2" %}
 
 package:
   name: jupyter_cms
   version: {{ version }}
 
 source:
-  fn: jupyter_cms-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/j/jupyter_cms/jupyter_cms-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: d6c4f1cc327914a2dd480afe795087708c473fc49bdb5e4dbe3abf2f6cc31de2
 
 build:
   number: 1005
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: {{ PYTHON }} -m pip install -vvv .
+  noarch: python
   entry_points:
     - jupyter-cms = jupyter_cms.extensionapp:main
     - jupyter-bundler = jupyter_cms.bundlerapp:main
 
 requirements:
   host:
-    - python
+    - python >=3.5
+    - pip
     - setuptools
   run:
-    - python
-    - notebook >=4.0.0
+    - python >=3.5
+    - notebook >=4.0.0,<7
     - ipython >=4.1.0
     - whoosh >=2.7.0
-    - scandir >=1.1  # [py27 or py34]
 
 test:
   imports:
@@ -37,7 +36,7 @@ test:
 
 about:
   home: http://github.com/jupyter-incubator/contentmanagement
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.md
   summary: Jupyter Notebook Content Management Extensions
   dev_url: https://github.com/jupyter-incubator/contentmanagement
