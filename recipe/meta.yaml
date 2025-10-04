@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/j/jupyter_cms/jupyter_cms-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/j/jupyter_cms/jupyter_cms-{{ version }}.tar.gz
   sha256: d6c4f1cc327914a2dd480afe795087708c473fc49bdb5e4dbe3abf2f6cc31de2
 
 build:
-  number: 1005
+  number: 1006
   script: {{ PYTHON }} -m pip install -vvv .
   # This cannot be noarch because of link scripts.
   # noarch: python
